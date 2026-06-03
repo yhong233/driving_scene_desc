@@ -1,0 +1,24 @@
+# 数据集划分配置。
+conditions:
+  day_sunny: [1, 2, 3, 4, 5, 6, 7]
+  night_rainy: [8, 9, 10]
+
+target_classes:
+  - vehicle
+  - pedestrian
+  - obstacle
+
+
+split_strategy: frame_stratified
+
+frame_split:
+  mode: block
+  train_ratio: 0.60
+  val_ratio: 0.20
+  test_ratio: 0.20
+  gap: 0
+
+
+train_scenes: [1, 5, 6, 7, 10]
+val_scenes: [2, 8]
+test_scenes: [3, 4, 9]

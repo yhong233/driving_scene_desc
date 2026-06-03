@@ -1,0 +1,7 @@
+project_root: "D:/python/driving_scene_desc"
+nuscenes_root: "D:/python/driving_scene_desc/data/raw/nuScenes"
+nuscenes_version: "v1.0-mini"
+clip_ckpt: "D:/python/driving_scene_desc/models/clip/ViT-B-32.pt"
+fusion_ckpt: "D:/python/driving_scene_desc/models/fusion/fusion_mlp.pt"
+output_root: "D:/python/driving_scene_desc/outputs"
+cache_root: "D:/python/driving_scene_desc/outputs/cache"

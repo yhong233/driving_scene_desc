@@ -1,0 +1,18 @@
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.7
+Pillow>=9.4
+opencv-python>=4.7
+PyYAML>=6.0
+tqdm>=4.64
+scikit-learn>=1.2
+pyquaternion>=0.9.9
+nuscenes-devkit>=1.1.11
+torch>=2.0
+torchvision>=0.15
+streamlit>=1.28
+# OpenAI CLIP 官方库，Windows 下建议：pip install git+https://github.com/openai/CLIP.git
+# 若无法联网安装，可把已有 clip 包复制到环境中；程序也带有 no-clip fallback，但正式实验应安装 CLIP。
+ftfy
+regex
+tqdm

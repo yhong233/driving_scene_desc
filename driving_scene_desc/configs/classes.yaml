@@ -1,0 +1,76 @@
+# 命名：车辆、行人、障碍物。
+target_classes:
+  - vehicle
+  - pedestrian
+  - obstacle
+
+# 描述补充类别：只用于自然语言描述，不作为 FusionMLP 的训练标签，也不参与严格 F1 评价。
+description_classes:
+  - road
+  - building
+  - vegetation
+  - traffic_light
+  - traffic_sign
+
+# CLIP 语义类别：三类目标与环境类。
+clip_classes:
+  vehicle:
+    cn: "车辆"
+    prompts:
+      - "a photo of a vehicle in a driving scene"
+      - "a car, bus or truck on the road"
+      - "vehicles in an autonomous driving camera image"
+  pedestrian:
+    cn: "行人"
+    prompts:
+      - "a pedestrian in a driving scene"
+      - "a person walking near the road"
+      - "people on the street in a traffic scene"
+  obstacle:
+    cn: "障碍物"
+    prompts:
+      - "a road obstacle in a driving scene"
+      - "barriers or traffic cones on the road"
+      - "movable obstacles near the driving lane"
+  road:
+    cn: "道路"
+    prompts:
+      - "a road in an urban driving scene"
+      - "a city street with lane area"
+      - "the road surface in front of a vehicle"
+  building:
+    cn: "建筑物"
+    prompts:
+      - "buildings along an urban street"
+      - "a city road surrounded by buildings"
+      - "roadside buildings in a driving scene"
+  vegetation:
+    cn: "植被"
+    prompts:
+      - "trees and vegetation beside the road"
+      - "green vegetation in a street scene"
+      - "roadside plants in an urban driving scene"
+  traffic_light:
+    cn: "交通灯"
+    prompts:
+      - "a traffic light at an intersection"
+      - "traffic signal lights in a driving scene"
+      - "red or green traffic lights on the road"
+  traffic_sign:
+    cn: "交通标志"
+    prompts:
+      - "a traffic sign beside the road"
+      - "road signs in a driving scene"
+      - "street traffic signs"
+  barrier:
+    cn: "路障"
+    prompts:
+      - "a road barrier or obstacle"
+      - "barriers in a driving scene"
+      - "an obstacle on the road"
+  traffic_cone:
+    cn: "交通锥"
+    prompts:
+      - "a traffic cone on the road"
+      - "orange cones in a driving scene"
+      - "road construction traffic cones"

@@ -1,0 +1,17 @@
+# 实验脚本配置
+
+traditional_methods:
+  - traditional_rule
+  - ours
+
+ablation_methods:
+  - image_only
+  - lidar_only
+  - normal_fusion
+  - ours
+
+methods:
+  - traditional_rule
+  - ours
+
+threshold_default: 0.50
